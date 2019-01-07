@@ -1,8 +1,9 @@
 
 # arch-utils
 
-This is a Java libraries with some utilities (mainly transformers, predicates and conditions) to empower your ArchUnit test.
+This is a Java libraries with some utilities (mainly transformers, predicates and conditions) to empower your [ArchUnit test][archunit].
 
+In general, a rule 
 ```
 classes that ${PREDICATE} should ${CONDITION}
 ```
@@ -81,6 +82,7 @@ Step 2. Add the dependency
 ```
 
 [git]: https://git-scm.com/
+[archunit]: https://git-scm.com/
 [maven]: https://maven.apache.org/download.cgi
 [jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 [JEE]: http://www.oracle.com/technetwork/java/javaee/tech/index.html
