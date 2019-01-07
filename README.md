@@ -1,5 +1,5 @@
 
-# arch-utils
+# ArchUnit utilities
 
 This is a Java libraries with some utilities (mainly transformers, predicates and conditions) to empower your [ArchUnit test][archunit].
 
