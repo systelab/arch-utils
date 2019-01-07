@@ -124,6 +124,19 @@ static ArchRule allPublicMethodsInRestControllersShouldReturnResponseEntity =
                 .because("we want to have String in methods of classes annotated with @MyAnnotation");
 ```
 
+## Classes
+
+### Conditions
+- haveAllFieldsPublic()
+- notHaveTheField(String fieldname)
+
+## Methods
+### Predicates
+- inClassesAnnotatedWith(Class className)
+
+### Conditions
+- beAnnotated(Class className)
+- returnType(Class className)
 
 [git]: https://git-scm.com/
 [archunit]: https://git-scm.com/
