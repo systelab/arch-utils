@@ -1,4 +1,4 @@
-package com.systelab.sti.architecture;
+package com.systelab.architecture.rules.examples;
 
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
