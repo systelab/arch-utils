@@ -4,13 +4,11 @@
 This is a Java libraries with some utilities (mainly transformers, predicates and conditions) to empower your [ArchUnit test][archunit]. 
 ArchUnit is a free, simple and extensible library for checking the architecture of a Java code.
 
-In general, a rule is compose by predicates and conditions.
-
-```
-classes that ${PREDICATE} should ${CONDITION}
-```
-
 > This library depends on [JUnit 5][junit]. If you are using the previous version, please upgrade.  
+
+In general, a rule is applied to JavaClasses that can be transformed to custom objects, and then filtered by predicates and checked against given conditions.
+
+![Image](https://www.archunit.org/userguide/html/import-vs-lang.png "Logo Title Text 1")
 
 ## Getting Started
 
@@ -105,6 +103,27 @@ Step 2. Add the dependency
 	    <version>v1.0.2</version>
 	</dependency>
 ```
+
+## Custom Objects
+
+ClassesTransformer define how JavaClasses are to be transformed to the desired rule input.
+The following transformers are provided:
+
+- constructors()
+- fields()
+- methods() 
+
+For example:
+
+```
+@ArchTest
+static ArchRule allPublicMethodsInRestControllersShouldReturnResponseEntity =
+	all(methods())
+        	.that(inClassesAnnotatedWith(MyAnnotation.class)).and(arePublic())
+                .should(returnType(String.class))
+                .because("we want to have String in methods of classes annotated with @MyAnnotation");
+```
+
 
 [git]: https://git-scm.com/
 [archunit]: https://git-scm.com/
