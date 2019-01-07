@@ -115,7 +115,7 @@ The following transformers are provided:
 
 For example:
 
-```
+```java
 @ArchTest
 static ArchRule allPublicMethodsInRestControllersShouldReturnResponseEntity =
 	all(methods())
