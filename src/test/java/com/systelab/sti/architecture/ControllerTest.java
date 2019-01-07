@@ -4,7 +4,10 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-import static com.systelab.architecture.rules.MethodUtilities.*;
+import static com.systelab.architecture.rules.ClassTransformers.methods;
+import static com.systelab.architecture.rules.methods.MethodConditionUtilities.*;
+import static com.systelab.architecture.rules.methods.MethodPredicateUtilities.arePublic;
+import static com.systelab.architecture.rules.methods.MethodPredicateUtilities.inClassesAnnotatedWith;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.*;
 
 @AnalyzeClasses(packages = "com.systelab.sti")
