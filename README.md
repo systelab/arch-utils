@@ -1,6 +1,11 @@
 
 # arch-utils
 
+This is a Java libraries with some utilities (mainly transformers, predicates and conditions) to empower your ArchUnit test.
+
+```
+classes that ${PREDICATE} should ${CONDITION}
+```
 
 ## Getting Started
 
@@ -29,15 +34,51 @@ In order to install the dependencies and generate the Uber jar you must run:
 mvn clean install
 ```
 
-### Run
+### Gradle
 
-To launch the server, simply run with java -jar the generated jar file.
+In order to use the library, you should:
 
-```bash
-cd target
-java -jar arch-utils-1.0.jar
+Add it in your root build.gradle at the end of repositories:
+
+```
+	allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+	}
 ```
 
+Step 2. Add the dependency
+
+```
+	dependencies {
+        implementation 'com.github.systelab:arch-utils:v1.0.2'
+	}
+```
+
+### Maven
+
+Step 1. Add the JitPack repository to your build file
+
+```
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+
+Step 2. Add the dependency
+
+```
+	<dependency>
+	    <groupId>com.github.systelab</groupId>
+	    <artifactId>arch-utils</artifactId>
+	    <version>v1.0.2</version>
+	</dependency>
+```
 
 [git]: https://git-scm.com/
 [maven]: https://maven.apache.org/download.cgi
