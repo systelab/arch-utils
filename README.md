@@ -139,7 +139,7 @@ static ArchRule allPublicMethodsInRestControllersShouldReturnResponseEntity =
 - returnType(Class className)
 
 [git]: https://git-scm.com/
-[archunit]: https://git-scm.com/
+[archunit]: https://www.archunit.org/
 [maven]: https://maven.apache.org/download.cgi
 [jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 [JEE]: http://www.oracle.com/technetwork/java/javaee/tech/index.html
