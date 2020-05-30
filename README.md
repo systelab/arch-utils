@@ -44,12 +44,12 @@ In order to release a new version:
 Step 1. Update the version in your pom.xml file. For example:
 
 ```
-<version>1.0.2</version>
+<version>1.1.0</version>
 ```
 
 Step 2. Commit and push in the master branch, and generate a new Release by pressing the button "Draft new release".
 
-In the example use v.1.0.2 as the Tag version, and 1.0.2 as the release title.
+In the example use v.1.1.0 as the Tag version, and 1.1.0 as the release title.
 
 Step 3. Head to https://jitpack.io and look up "systelab/arch-utils". Choose the new version and press the button "Get it". Check the log to verify that everything is fine.
 
@@ -77,7 +77,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-    implementation 'com.github.systelab:arch-utils:v1.0.2'
+    implementation 'com.github.systelab:arch-utils:v1.1.0'
 }
 ```
 
@@ -100,7 +100,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.systelab</groupId>
 	    <artifactId>arch-utils</artifactId>
-	    <version>v1.0.2</version>
+	    <version>v1.1.0</version>
 	</dependency>
 ```
 
